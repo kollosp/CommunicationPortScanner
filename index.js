@@ -32,7 +32,10 @@ port.on('data', (data) => {
 	//data = new Buffer(data)
 
 	for(let i=0; i<data.length;++i){
-		process.stdout.write("["+parseInt(data[i], 16) +"]")
+		let str = data[i].toString(16)
+		str = str.length == 2 ? str : '0' + str
+
+		process.stdout.write("["+str+"]")
 	}
 	
 	clearInterval(interval)
