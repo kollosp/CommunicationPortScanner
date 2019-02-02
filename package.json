@@ -1,0 +1,14 @@
+{
+  "name": "22-comscanner",
+  "version": "1.0.0",
+  "description": "com scanner",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "author": "Paweł Parczyk",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^7.1.4"
+  }
+}
